@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import ColorMode from '~/components/ColorMode.vue';
+
+</script>
+
 <template>
   <div>
-    Homepage asd
+    <ColorMode/>
   </div>
 </template>
