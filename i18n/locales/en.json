@@ -54,11 +54,11 @@
       "title": "WakaTime Stats",
       "sub_title": "Coding activity over the past 7 days.",
       "last_update": "Last Update",
-      "start_date": "Start Date",
-      "end_date": "End Date",
-      "daily_average": "Average Daily Coding Time",
-      "total_this_week": "Total This Week",
+      "start": "Start Date",
+      "end": "End Date",
       "best_day": "Best Day",
+      "human_readable_daily_average_including_other_language": "Average Daily Coding Time",
+      "human_readable_total_including_other_language": "Total This Week",
       "all_time_since_joined": "All-Time Coding Since Joined",
       "languages": "Languages"
     }

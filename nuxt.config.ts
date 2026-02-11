@@ -52,5 +52,9 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
-  }
+  },
+
+  runtimeConfig: {
+    wakatimeApiKey: process.env.WAKATIME_API_KEY,
+  },
 })

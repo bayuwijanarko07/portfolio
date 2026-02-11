@@ -35,7 +35,7 @@
         </template>
 
         <template #body>
-        
+            <HomeWakatimeStats />
         </template>
     </UDashboardPanel>
 </template>
