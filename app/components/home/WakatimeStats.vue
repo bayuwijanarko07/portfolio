@@ -66,7 +66,7 @@
             {{ item.label }}
         </span>
 
-        <span class="text-2xl font-semibold text-highlighted text-primary-500">
+        <span class="text-2xl font-semibold text-primary-500">
             {{ item.value }}
         </span>
       </div>

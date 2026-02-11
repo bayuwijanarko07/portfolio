@@ -54,11 +54,11 @@
       "title": "Statistik WakaTime",
       "sub_title": "Aktivitas coding selama 7 hari terakhir.",
       "last_update": "Pembaruan Terakhir",
-      "start_date": "Tanggal Mulai",
-      "end_date": "Tanggal Selesai",
-      "daily_average": "Rata-rata Waktu Coding Harian",
-      "total_this_week": "Total Minggu Ini",
+      "start": "Tanggal Mulai",
+      "end": "Tanggal Selesai",
       "best_day": "Hari Terbaik",
+      "human_readable_daily_average_including_other_language": "Rata-rata Waktu Coding Harian",
+      "human_readable_total_including_other_language": "Total Minggu Ini",
       "all_time_since_joined": "Total Coding Sejak Bergabung",
       "languages": "Bahasa"
     }
