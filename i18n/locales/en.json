@@ -1,0 +1,116 @@
+{
+  "ProfilPage": {
+    "title": "Profile",
+    "description": "Short Biography.",
+    "about": {
+      "paragraf_1": "Hola! I am Bayu Wijanarko a Frontend Web Developer who focuses on building modern interfaces that are scalable, maintainable, and product-oriented. Experienced in using Nuxt.js, Astro.js, and the Vue ecosystem, I am used to designing frontend architecture that is neat, data-driven, and comfortable for users to use.",
+
+      "paragraf_2": "Experienced in dealing with real system requirements and business contexts, I enjoy the role of a problem solver bridging product, design and technical solution needs. In the future, I am ready to grow into a Senior Frontend Engineer.",
+
+      "paragraf_3": "Best regards,"
+    },
+    "career": {
+      "title": "Career",
+      "sub_title": "Professional Experience.",
+      "show_detail": "Show details",
+      "hide_detail": "Hide details",
+      "sections": {
+        "responsibilities": "Responsibilities"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "sub_title" : "Professional Skills."
+    },
+    "duration": {
+      "year": "Year",
+      "years": "Years",
+      "month": "Month",
+      "months": "Months",
+      "present": "Present"
+    },
+    "education": {
+      "title": "Education",
+      "sub_title": "Last Education."
+    },
+    "resume_download_button": "Download Resume",
+    "portfolio_download_button": "Download Portfolio"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "description": "Dashboard Progress",
+    "github": {
+      "title": "GitHub Contributions",
+      "sub_title": "GitHub activity over the past year.",
+      "title_total_contribution": "Total",
+      "title_total_this_week_contribution": "This week",
+      "title_best_contribution": "Best",
+      "title_average_contribution": "Average",
+      "title_less_contribution": "Less",
+      "title_more_contribution": "More",
+      "unit": "day"
+    },
+    "wakatime": {
+      "title": "WakaTime Stats",
+      "sub_title": "Coding activity over the past 7 days.",
+      "last_update": "Last Update",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "daily_average": "Average Daily Coding Time",
+      "total_this_week": "Total This Week",
+      "best_day": "Best Day",
+      "all_time_since_joined": "All-Time Coding Since Joined",
+      "languages": "Languages"
+    }
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Projects Showcase.",
+    "detail_project": "Detail Project",
+    "tech_stack": "Teknologi yang Digunakan",
+    "back": "Back",
+    "source_code": "Kode Sumber",
+    "live_preview": "Live Preview"
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Let`s get in touch.",
+    "social_media": {
+      "title": "Social Media",
+      "description": "Find me on social media."
+    },
+    "email_forms": {
+      "title": "Send me a message",
+      "label_name": "Name",
+      "placeholder_name": "Input Name",
+      "label_email": "Email",
+      "placeholder_email": "Input Email",
+      "label_message": "Message",
+      "placeholder_message": "Input Message",
+      "button": "Send Message",
+      "sending": "Sending Message...",
+      "error_name": "Name is required",
+      "error_email": "Email is required",
+      "error_message": "Message is required"
+    }
+  },
+  "Footer": {
+    "title": "Developed with ❤ by Bayu Wijanarko.",
+    "sub_title": "All Rights Reserved."
+  },
+  "LocaleSwitcher": {
+    "en": "EN",
+    "id": "ID",
+    "label": "Language"
+  },
+  "Navigation": {
+    "Profile": "Profile",
+    "Projects": "Projects",
+    "Dashboard": "Dashboard",
+    "Contact": "Contact"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "button": "Take me home"
+  }
+}

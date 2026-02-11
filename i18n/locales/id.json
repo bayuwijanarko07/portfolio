@@ -1,0 +1,116 @@
+{
+  "ProfilPage": {
+    "title": "Profil",
+    "description": "Biografi Singkat.",
+    "about": {
+      "paragraf_1": "Hola! Saya Bayu Wijanarko adalah Frontend Web Developer yang berfokus pada pembangunan antarmuka modern yang scalable, maintainable, dan berorientasi produk. Berpengalaman menggunakan Nuxt.js, Astro.js, dan ekosistem Vue, saya terbiasa merancang arsitektur frontend yang rapi, data-driven, serta nyaman digunakan oleh pengguna.",
+
+      "paragraf_2": "Berpengalaman menangani kebutuhan sistem nyata dan konteks bisnis, saya menikmati peran sebagai problem solver yang menjembatani kebutuhan produk, desain, dan solusi teknis. Ke depan, saya siap berkembang ke peran Senior Frontend Engineer.",
+
+      "paragraf_3": "Salam hangat,"
+    },
+    "skills": {
+      "title": "Keahlian",
+      "sub_title": "Keahlian Profesional."
+    },
+    "career": {
+      "title": "Karier",
+      "sub_title": "Pengalaman Profesional saya.",
+      "show_detail": "Lihat detail",
+      "hide_detail": "Sembunyikan",
+      "sections": {
+        "responsibilities": "Tanggung Jawab"
+      }
+    },
+    "duration": {
+      "year": "Tahun",
+      "years": "Tahun",
+      "month": "Bulan",
+      "months": "Bulan",
+      "present": "Sekarang"
+    },
+    "education": {
+      "title": "Pendidikan",
+      "sub_title": "Pendidikan Terakhir."
+    },
+    "resume_download_button": "Unduh CV",
+    "portfolio_download_button": "Unduh Portofolio"
+  },
+  "DashboardPage": {
+    "title": "Dasbor",
+    "description": "Dasbor Proses",
+    "github": {
+      "title": "Kontribusi GitHub",
+      "sub_title": "Aktivitas GitHub satu tahun terakhir.",
+      "title_total_contribution": "Total",
+      "title_total_this_week_contribution": "Minggu ini",
+      "title_best_contribution": "Terbaik",
+      "title_average_contribution": "Rata-rata",
+      "title_less_contribution": "Paling Sedikit",
+      "title_more_contribution": "Paling Banyak",
+      "unit": "hari"
+    },
+    "wakatime": {
+      "title": "Statistik WakaTime",
+      "sub_title": "Aktivitas coding selama 7 hari terakhir.",
+      "last_update": "Pembaruan Terakhir",
+      "start_date": "Tanggal Mulai",
+      "end_date": "Tanggal Selesai",
+      "daily_average": "Rata-rata Waktu Coding Harian",
+      "total_this_week": "Total Minggu Ini",
+      "best_day": "Hari Terbaik",
+      "all_time_since_joined": "Total Coding Sejak Bergabung",
+      "languages": "Bahasa"
+    }
+  },
+  "ProjectsPage": {
+    "title": "Proyek",
+    "description": "Pameran proyek-proyek",
+    "detail_project": "Detil Proyek",
+    "tech_stack": "Teknologi yang Digunakan",
+    "back": "Kembali",
+    "source_code": "Kode Sumber",
+    "live_preview": "Preview Langsung"
+  },
+  "ContactPage": {
+    "title": "Kontak",
+    "description": "Mari kita terhubung.",
+    "social_media": {
+      "title": "Sosial Media",
+      "description": "Temukan saya di sosial media."
+    },
+    "email_forms": {
+      "title": "Kirim saya pesan",
+      "label_name": "Nama",
+      "placeholder_name": "Masukkan Nama",
+      "label_email": "Email",
+      "placeholder_email": "Masukkan Email",
+      "label_message": "Pesan",
+      "placeholder_message": "Masukkan Pesan",
+      "button": "Kirim Pesan",
+      "sending": "Mengirim Pesan...",
+      "error_name": "Nama wajib diisi",
+      "error_email": "Email wajib diisi",
+      "error_message": "Pesan wajib diisi"
+    }
+  },
+  "Footer": {
+    "title" : "Dikembangkan dengan ❤ oleh Bayu Wijanarko.",
+    "sub_title": "Semua Hak Dilindungi Undang-undang."
+  },
+  "LocaleSwitcher": {
+    "en": "🇺🇸",
+    "id": "🇮🇩",
+    "label": "Bahasa"
+  },
+  "Navigation": {
+    "Profile": "Profil",
+    "Projects": "Proyek",
+    "Dashboard": "Dasbor",
+    "Contact": "Kontak"
+  },
+  "NotFoundPage": {
+    "title": "Halaman tidak ditemukan",
+    "button": "Bawa saya ke beranda"
+  }
+}
