@@ -11,6 +11,8 @@ export interface WakaStatsData {
         date: string
         text: string
     }
+    
+    range: string
 
     human_readable_daily_average_including_other_language: string
     human_readable_total_including_other_language: string

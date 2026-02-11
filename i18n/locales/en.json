@@ -60,7 +60,8 @@
       "human_readable_daily_average_including_other_language": "Average Daily Coding Time",
       "human_readable_total_including_other_language": "Total This Week",
       "all_time_since_joined": "All-Time Coding Since Joined",
-      "languages": "Languages"
+      "languages": "Languages",
+      "last_7_days": "Last 7 Days"
     }
   },
   "ProjectsPage": {

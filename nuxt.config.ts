@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@vueuse/motion',
     '@nuxtjs/i18n',
-    '@nuxt/ui'
+    '@nuxt/ui',
   ],
 
   devtools: {

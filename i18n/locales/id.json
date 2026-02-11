@@ -60,7 +60,8 @@
       "human_readable_daily_average_including_other_language": "Rata-rata Waktu Coding Harian",
       "human_readable_total_including_other_language": "Total Minggu Ini",
       "all_time_since_joined": "Total Coding Sejak Bergabung",
-      "languages": "Bahasa"
+      "languages": "Bahasa",
+      "last_7_days": "7 Hari Terakhir"
     }
   },
   "ProjectsPage": {

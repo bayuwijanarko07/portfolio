@@ -17,6 +17,7 @@
     "@nuxtjs/i18n": "^10.2.3",
     "@types/node": "^25.2.3",
     "@vueuse/motion": "^3.0.3",
+    "date-fns": "^4.1.0",
     "nuxt": "^4.3.1",
     "tailwindcss": "^4.1.18"
   },

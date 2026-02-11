@@ -25,11 +25,11 @@
 
 
   useSeoMeta({
-    title: 'Bayu Wijanarko',
-    description: 'Personal website dan portfolio Bayu Wijanarko',
-    ogTitle: 'Personal website dan portfolio Bayu Wijanarko',
-    ogDescription: 'Personal website dan portfolio Bayu Wijanarko',
-    twitterCard: 'summary_large_image'
+      title: 'Bayu Wijanarko',
+      description: 'Personal website dan portfolio Bayu Wijanarko',
+      ogTitle: 'Personal website dan portfolio Bayu Wijanarko',
+      ogDescription: 'Personal website dan portfolio Bayu Wijanarko',
+      twitterCard: 'summary_large_image'
   })
 
 </script>
