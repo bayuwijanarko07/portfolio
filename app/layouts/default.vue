@@ -1,4 +1,5 @@
 <script setup lang="ts">
+    import { menus } from "@/constants/menu";
     import type { NavigationMenuItem } from '@nuxt/ui'
     import { useI18n } from 'vue-i18n'
 
@@ -33,6 +34,8 @@
         }, 
     ]] satisfies NavigationMenuItem[][]
 
+    console.log(links[0])
+
     const groups = computed(() => [{
         id: 'links',
         label: 'Go to',
@@ -56,7 +59,7 @@
 
                 <UNavigationMenu
                     :collapsed="collapsed"
-                    :items="links[0]"
+                    :items="menus"
                     orientation="vertical"
                     tooltip
                     popover
