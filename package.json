@@ -21,7 +21,8 @@
     "date-fns": "^4.1.0",
     "nodemailer": "^8.0.1",
     "nuxt": "^4.3.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "vue": "^3.5.28"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.14.0",

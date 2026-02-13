@@ -40,6 +40,11 @@
         })
     }
 
+    const openId = ref<string | number | null>(null)
+
+    const toggle = (id: string | number) => {
+        openId.value = openId.value === id ? null : id
+    }
 </script>
 
 <template>
@@ -107,21 +112,25 @@
                                     <span class="text-sm text-muted">{{ c.type }}</span>
                                 </div>
                             </div>
+                            <button
+                                class="flex items-center justify-center"
+                                @click="toggle(c.id)"
+                                >
+                                <span class="rounded flex items-center justify-center cursor-pointer">
+                                    {{ openId === c.id
+                                    ? tCareers('hide_detail')
+                                    : tCareers('show_detail') }}
+                                </span>
+                                <UIcon name="mdi:chevron-right" class="size-5" :class="{ 'rotate-90': openId === c.id }" />
+                            </button>
                         </div>
-                        <div class="mx-4">
-                            <UModal title="Responsibilities" :close="{ variant: 'outline' }">
-                                <div class="p-0.5 rounded flex items-center justify-center cursor-pointer">
-                                    <UIcon name="mdi:open-in-app" class="size-5"/>
-                                </div>
-                                <template #body>
-                                   <div class="p-5">
-                                        <ul class="list-disc" v-for="res in c.responsibilities">
-                                            <li class="py-2">{{ res }}</li>
-                                        </ul>
-                                   </div>
-                                </template>
-                            </UModal>
-                        </div>
+                    </div>
+                    <div v-if="openId === c.id" class="mt-3">
+                        <ul class="list-disc pl-5">
+                            <li v-for="(res, i) in c.responsibilities" :key="i" class="py-1 text-sm text-muted">
+                            {{ res }}
+                            </li>
+                        </ul>
                     </div>
                 </UCard>
             </div>

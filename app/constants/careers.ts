@@ -1,5 +1,6 @@
 export const careers = [
   {
+    id: "1",
     position: "Staff IT",
     company: "Pt. Gisara Tantra Berkarya",
     logo: "/images/careers/gtb.webp",
@@ -18,6 +19,7 @@ export const careers = [
     isShow: true,
   },
   {
+    id: "2",
     position: "Frontend Developer",
     company: "Pt. Lumintu Logic Indonesia",
     logo: "/images/careers/lumintu-logic.webp",
@@ -36,6 +38,7 @@ export const careers = [
     isShow: false,
   },
   {
+    id: "3",
     position: "Frontend Developer",
     company: "Pt. Transisi Teknologi Mandiri",
     logo: "/images/careers/ttm.webp",
