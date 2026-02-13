@@ -8,10 +8,6 @@
                 <template #leading>
                     <UDashboardSidebarCollapse />
                 </template>
-
-                <template #right>
-                    
-                </template>
             </UDashboardNavbar>
         </template>
 

@@ -87,9 +87,7 @@
             </template>
 
         </UDashboardSidebar>
-
-        <UDashboardSearch :groups="groups" modal/>
-
+        <UDashboardSearch :groups="groups"/>
         <slot />
     </UDashboardGroup>
 </template>

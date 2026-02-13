@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+   
 </script>
 
 <template>
@@ -9,13 +10,12 @@
                     <UDashboardSidebarCollapse />
                 </template>
 
-                <template #right>
-                    
-                </template>
             </UDashboardNavbar>
         </template>
 
         <template #body>
+            <ContactForms />
+            <ContactSocmed />
         </template>
     </UDashboardPanel>
 </template>

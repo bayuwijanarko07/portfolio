@@ -4,6 +4,7 @@
 
     const { t } = useI18n()
     const tSkills = (key: string) => t(`ProfilPage.skills.${key}`)
+    
     const tooltip = ref({
         show: false,
         text: '',
