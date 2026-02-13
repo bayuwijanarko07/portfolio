@@ -18,29 +18,34 @@
         locale.value.toUpperCase()
     )
 
-    const changeLanguage = (code: Locale) => {
+    const changeLanguage = async (code: Locale) => {
         if (locale.value === code) return
-        setLocale(code)
+        await setLocale(code)
     }
 
-    const links = [[
+    const allMenuItems = computed<NavigationMenuItem[]>(() => menus)
+
+    const languageItems = computed(() =>
+        locales.map(l => ({
+            id: `lang-${l.code}`,
+            label: l.name,
+            icon: 'i-lucide-languages',
+            onSelect: () => changeLanguage(l.code)
+        }))
+    )
+
+    const groups = computed(() => [
         {
-            label: 'Home',
-            icon: 'i-lucide-house',
-            to: '/',
-            onSelect: () => {
-                open.value = false
-            }
-        }, 
-    ]] satisfies NavigationMenuItem[][]
-
-    console.log(links[0])
-
-    const groups = computed(() => [{
-        id: 'links',
-        label: 'Go to',
-        items: links.flat()
-    }])
+            id: 'navigation',
+            label: 'Navigation',
+            items: allMenuItems.value
+        },
+        {
+            id: 'language',
+            label: 'Language',
+            items: languageItems.value
+        }
+    ])
 
 </script>
 
@@ -59,26 +64,17 @@
 
                 <UNavigationMenu
                     :collapsed="collapsed"
-                    :items="menus"
+                    :items="allMenuItems"
                     orientation="vertical"
-                    tooltip
-                    popover
                 />
 
                 <UNavigationMenu
                     :collapsed="collapsed"
-                    :items="links[1]"
                     orientation="vertical"
-                    tooltip
                     class="mt-auto"
                 />
 
-                <UDropdownMenu
-                    :items="locales.map(l => ({
-                        label: l.name,
-                        onSelect: () => changeLanguage(l.code)
-                    }))"
-                    >
+                <UDropdownMenu :items="languageItems">
                     <UButton
                         icon="i-lucide-languages"
                         color="neutral"
@@ -92,7 +88,7 @@
 
         </UDashboardSidebar>
 
-        <UDashboardSearch :groups="groups" />
+        <UDashboardSearch :groups="groups" modal/>
 
         <slot />
     </UDashboardGroup>

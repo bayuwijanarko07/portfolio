@@ -8,9 +8,10 @@
 
 <template>
     <UPageGrid class="gap-4 lg:grid-cols-1">
-        <UPageCard>
-            <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-2 p-0 justify-start">
+        <UCard>
+
+            <template #header class="border-none">
+                <div class="flex items-center gap-2 p-0">
                     <div class="p-0.5 rounded bg-primary flex items-center justify-center">
                         <UIcon name="mdi:user" class="text-white"/>
                     </div>
@@ -18,13 +19,16 @@
                         {{ tAbout('title') }}
                     </span>
                 </div>
+            </template>
 
+            <div class="flex flex-col gap-2">
                 <span class="text-sm text-muted"
                     v-for="item in paragrafData"
                 >
                     {{ t(`ProfilPage.about.paragraf_${item}`) }}
                 </span>
             </div>
-        </UPageCard>
+
+        </UCard>
     </UPageGrid>
 </template>

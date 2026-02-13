@@ -31,14 +31,17 @@
 <template>
     <UPageGrid class="gap-6 lg:grid-cols-1">
         <UCard>
-            <div class="flex items-center gap-2 p-0 justify-start">
-                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                    <UIcon name="mdi:code" class="text-white"/>
+
+            <template #header>
+                <div class="flex items-center gap-2 p-0 justify-start">
+                    <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+                        <UIcon name="mdi:code" class="text-white"/>
+                    </div>
+                    <span class="font-semibold text-primary-500">
+                        {{ tSkills('title') }}
+                    </span>
                 </div>
-                <span class="font-semibold text-primary-500">
-                    {{ tSkills('title') }}
-                </span>
-            </div>
+            </template>
 
             <UMarquee :overlay="false" pause-on-hover class="p-2">
                 <div
@@ -65,6 +68,7 @@
                 >
                 {{ tooltip.text }}
             </div>
+
         </UCard>
     </UPageGrid>
 </template>
