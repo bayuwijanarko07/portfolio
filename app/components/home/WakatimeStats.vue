@@ -59,10 +59,10 @@
                 displayValue = value as string
             }
 
-            return {
-                label: tWaka(key),
-                value: displayValue
-            }
+                return {
+                    label: tWaka(key),
+                    value: displayValue
+                }
             })
         })
 
@@ -84,7 +84,7 @@
         <div class="text-sm text-muted">{{ tWaka(range) }}</div>
         <div class="text-sm text-muted"> {{ tWaka('last_update') }} : {{ lastUpdated }}</div>
     </div>
-    <UPageGrid class="lg:grid-cols-3 gap-4 sm:gap-6">
+    <UPageGrid class="lg:grid-cols-3 gap-2 sm:gap-3">
         <UPageCard 
             v-if="isActive && wakaCards.length"
             v-for="(item, index) in wakaCards"
@@ -95,15 +95,15 @@
             }"
             class="hover:shadow"
         >
-        <div class="flex flex-col gap-2">
-            <span class="text-sm text-muted">
-                {{ item.label }}
-            </span>
+            <div class="flex flex-col gap-2">
+                <span class="font-semibold text-primary-500">
+                    {{ item.label }}
+                </span>
 
-            <span class="text-2xl font-semibold text-primary-500">
-                {{ item.value }}
-            </span>
-        </div>
+                <span class="text-sm text-muted">
+                    {{ item.value }}
+                </span>
+            </div>
         </UPageCard>
 
         <div v-else-if="pending">

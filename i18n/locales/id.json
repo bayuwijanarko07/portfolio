@@ -1,6 +1,6 @@
 {
   "ProfilPage": {
-    "title": "Profil",
+    "title": "Tentang",
     "description": "Biografi Singkat.",
     "about": {
       "paragraf_1": "Hola! Saya Bayu Wijanarko adalah Frontend Web Developer yang berfokus pada pembangunan antarmuka modern yang scalable, maintainable, dan berorientasi produk. Berpengalaman menggunakan Nuxt.js, Astro.js, dan ekosistem Vue, saya terbiasa merancang arsitektur frontend yang rapi, data-driven, serta nyaman digunakan oleh pengguna.",
@@ -13,7 +13,7 @@
       "title": "Keahlian",
       "sub_title": "Keahlian Profesional."
     },
-    "career": {
+    "careers": {
       "title": "Karier",
       "sub_title": "Pengalaman Profesional saya.",
       "show_detail": "Lihat detail",
@@ -52,7 +52,6 @@
     },
     "wakatime": {
       "title": "Statistik WakaTime",
-      "sub_title": "Aktivitas coding selama 7 hari terakhir.",
       "last_update": "Pembaruan Terakhir",
       "start": "Tanggal Mulai",
       "end": "Tanggal Selesai",
@@ -60,7 +59,6 @@
       "human_readable_daily_average_including_other_language": "Rata-rata Waktu Coding Harian",
       "human_readable_total_including_other_language": "Total Minggu Ini",
       "all_time_since_joined": "Total Coding Sejak Bergabung",
-      "languages": "Bahasa",
       "last_7_days": "7 Hari Terakhir"
     }
   },
