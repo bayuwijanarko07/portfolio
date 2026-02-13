@@ -70,7 +70,7 @@
                             />
                         </div>
                         <div class="w-full space-y-1">
-                            <h6 class="space-y-2 text-sm text-muted">{{ c.position }}</h6>
+                            <h6>{{ c.position }}</h6>
                             <div class="space-y-2 text-sm text-muted">
                                 <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
                                     <NuxtLink :href="c.link || '#'" target="_blank" rel="noopener">
