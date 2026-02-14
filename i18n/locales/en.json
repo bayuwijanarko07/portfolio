@@ -103,9 +103,9 @@
     "label": "Language"
   },
   "Navigation": {
+    "Home": "Home",
     "Profile": "Profile",
     "Projects": "Projects",
-    "Dashboard": "Dashboard",
     "Contact": "Contact"
   },
   "NotFoundPage": {

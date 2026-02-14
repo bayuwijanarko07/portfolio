@@ -63,7 +63,7 @@
             </template>
 
             <div class="grid grid-cols-1 gap-4">
-                <UCard v-for="c in careers">
+                <UCard v-for="(c,index) in careers">
                     <div class="flex flex-row">
                         <div class="mx-4">
                             <img  
@@ -116,7 +116,7 @@
                                 class="flex items-center justify-center"
                                 @click="toggle(c.id)"
                                 >
-                                <span class="rounded flex items-center justify-center cursor-pointer">
+                                <span class="rounded flex items-center justify-center cursor-pointer text-sm text-muted ">
                                     {{ openId === c.id
                                     ? tCareers('hide_detail')
                                     : tCareers('show_detail') }}

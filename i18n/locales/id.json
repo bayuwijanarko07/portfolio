@@ -103,9 +103,9 @@
     "label": "Bahasa"
   },
   "Navigation": {
+    "Home": "Beranda",
     "Profile": "Profil",
     "Projects": "Proyek",
-    "Dashboard": "Dasbor",
     "Contact": "Kontak"
   },
   "NotFoundPage": {
