@@ -17,8 +17,6 @@ const isSidebarOpen = computed(() =>
   isExpanded.value || isHovered.value || isMobileOpen.value
 )
 
-const isHashLink = (menu: MenuItem) => menu.to === '#'
-
 const isActiveRoute = (menu: MenuItem) => {
   const currentPath = route.path
   const targetPath = menu.to
@@ -58,28 +56,18 @@ const handleMobileNavigate = () => {
     toggleMobileSidebar()
   }
 }
+
 </script>
 
 <template>
     <div class="flex flex-col overflow-y-auto duration-300 ease-linear no-scrollbar">
         <nav class="mb-6">
             <ul class="flex flex-col gap-1">
-                <li v-for="menu in props.list" :key="menu.to">
-                    <div v-if="isHashLink(menu)" class="cursor-pointer">
-                        <div :class="getActiveClasses(menu)">
-                            <UIcon :name="menu.icon" />
-                            <span v-if="isSidebarOpen"> 
-                                {{ tNav(`${menu.label}`) }}
-                            </span>
-                        </div>
-                    </div>
-
+                <li v-for="(menu, index) in props.list" :key="menu.to">
                     <NuxtLink
-                        v-else
                         :to="menu.to"
                         :aria-current="isActiveRoute(menu) ? 'page' : undefined"
-                        class="cursor-pointer"
-                        @click="handleMobileNavigate"
+                        @click="handleMobileNavigate()"
                     >
                         <div :class="getActiveClasses(menu)">
                             <UIcon :name="menu.icon" :class="isActiveRoute(menu) && 'transition-all duration-300 animate-pulse bg-blue-500'" />
@@ -87,7 +75,6 @@ const handleMobileNavigate = () => {
                             <span v-if="isSidebarOpen" class="menu-item-text grow"  :class="isActiveRoute(menu) && 'text-blue-500'">
                                 {{ tNav(`${menu.label}`) }}
                             </span>
-
                             <div v-if="!isSidebarOpen" class="absolute left-full ml-2 hidden group-hover:block">
                                 <span class="px-2 py-1 text-xs rounded bg-zinc-800 text-white">
                                     {{ tNav(`${menu.label}`) }}
@@ -97,6 +84,7 @@ const handleMobileNavigate = () => {
                             <UIcon v-if="isActiveRoute(menu) && !menu.isExclusive && isSidebarOpen" name="mdi:arrow-right" class="animate-pulse bg-blue-500" />
                         </div>
                     </NuxtLink>
+
                 </li>
             </ul>
         </nav>

@@ -8,7 +8,7 @@ export const useSidebar = () => {
   const handleResize = () => {
     if (!import.meta.client) return
 
-    const mobile = window.innerWidth < 1280
+    const mobile = window.innerWidth < 1220
     state.isMobile.value = mobile
 
     if (!mobile) {
@@ -26,6 +26,10 @@ export const useSidebar = () => {
 
   onMounted(init)
 
+  onUnmounted(() => {
+    window.removeEventListener('resize', handleResize)
+  })
+
   const toggleSidebar = () => {
     if (state.isMobile.value) {
       state.isMobileOpen.value = !state.isMobileOpen.value
@@ -34,18 +38,15 @@ export const useSidebar = () => {
     }
   }
 
-  const toggleSubmenu = (item: string) => {
-    state.openSubmenu.value =
-      state.openSubmenu.value === item ? null : item
+  const toggleMobileSidebar = () => {
+     state.isMobileOpen.value = !state.isMobileOpen.value
   }
 
   return {
     ...state,
     toggleSidebar,
-    toggleMobileSidebar: () =>
-      (state.isMobileOpen.value = !state.isMobileOpen.value),
+    toggleMobileSidebar,
     setIsHovered: (v: boolean) => (state.isHovered.value = v),
     setActiveItem: (v: string | null) => (state.activeItem.value = v),
-    toggleSubmenu,
   }
 }

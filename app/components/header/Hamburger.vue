@@ -1,33 +1,13 @@
 
 <script lang="ts" setup>
-    import { ref, watch } from 'vue'
+    import { ref, watch,  } from 'vue'
     import { useMotion } from '@vueuse/motion'
+    import { useSidebar } from '@/composables/useSidebar'
+    const { isExpanded, isMobileOpen, isMobile } = useSidebar()
 
-    const props = defineProps<{
-        modelValue?: boolean
-    }>()
-
-    const emit = defineEmits<{
-        (e: 'update:modelValue', value: boolean): void
-    }>()
-
-    const isOpen = ref(props.modelValue ?? false)
-
-    watch(
-    () => props.modelValue,
-        (val) => {
-            if (typeof val === 'boolean') {
-                isOpen.value = val
-                animate()
-            }
-        }
-    )
-
-    const toggle = () => {
-        isOpen.value = !isOpen.value
-        emit('update:modelValue', isOpen.value)
-        animate()
-    }
+    const isSidebarOpen = computed(() => {
+        return isMobile.value ? isMobileOpen.value : isExpanded.value
+    })
 
     const line1 = ref<HTMLElement | null>(null)
     const line2 = ref<HTMLElement | null>(null)
@@ -46,8 +26,8 @@
         transition: { duration: 0.25, easing: 'ease-out' },
     })
 
-    const animate = () => {
-        if (isOpen.value) {
+    const animate = (open: boolean) => {
+        if (open) {
             m1.apply({ y: 0, rotate: 45 })
             m2.apply({ opacity: 0 })
             m3.apply({ y: 0, rotate: -45 })
@@ -57,15 +37,13 @@
             m3.apply({ y: 6, rotate: 0 })
         }
     }
+
+    watch(isSidebarOpen, (val) => {
+        animate(val)
+    }, { immediate: true })
 </script>
 <template>
-     <button
-        @click="toggle"
-        class="flex items-center justify-center w-10 h-10 z-50 cursor-pointer
-        border rounded bg-zinc-100 dark:bg-zinc-800
-        border-zinc-300 dark:border-zinc-700
-        "
-        >
+    <button class="flex items-center justify-center w-10 h-10 z-50 cursor-pointer border rounded bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700">
         <span ref="line1" class="absolute w-4 h-0.5 bg-gray-500 dark:bg-gray-400"></span>
         <span ref="line2" class="absolute w-4 h-0.5 bg-gray-500 dark:bg-gray-400"></span>
         <span ref="line3" class="absolute w-4 h-0.5 bg-gray-500 dark:bg-gray-400"></span>

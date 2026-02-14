@@ -4,8 +4,6 @@
 
     const { toggleSidebar, toggleMobileSidebar } = useSidebar()
 
-    const isHamburgerOpen = ref(false)
-
     const handleToggle = () => {
         if (window.innerWidth >= 1024) {
             toggleSidebar()
@@ -24,8 +22,8 @@
 <template>
     <header class="sticky top-0 flex w-full bg-white border-gray-200 z-50 dark:border-gray-800 dark:bg-zinc-900 xl:border-b">
         <div class="flex flex-col items-center justify-between grow xl:flex-row xl:px-6">
-            <div class="flex items-center justify-between w-full gap-2 px-3 py-3 border-b border-gray-200 dark:border-gray-800 sm:gap-4 xl:justify-normal xl:border-b-0 xl:px-0 lg:py-4">
-                <HeaderHamburger v-model="isHamburgerOpen" @click="handleToggle" />
+            <div class="flex items-center justify-between w-full gap-2 px-3 py-3 border-b border-gray-200 dark:border-gray-800 sm:gap-4 xl:justify-normal xl:border-b-0 xl:px-0 lg:py-2">
+                <HeaderHamburger @click="handleToggle" />
                 <button
                     @click="toggleApplicationMenu"
                     class="flex items-center justify-center w-10 h-10 text-gray-500 rounded-lg z-50 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 xl:hidden"

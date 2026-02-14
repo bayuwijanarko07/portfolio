@@ -7,7 +7,7 @@
 
 <template>
   <aside
-   ref="sidebarEl"
+    ref="sidebarEl"
     :class="[
     'fixed flex flex-col mt-0 top-0 px-5 left-0 bg-white dark:bg-zinc-900 dark:border-zinc-800 text-zinc-900 h-screen z-50 border-r border-zinc-200',
         {
@@ -21,8 +21,8 @@
   >
     <div
         :class="[
-          'flex m-2 justify-center',
-          !isExpanded ? 'py-8' : 'py-6',
+          'py-8 flex',
+          !isExpanded && !isHovered ? 'lg:justify-center' : 'justify-start',
         ]"
       >
       <NuxtLink to="/">

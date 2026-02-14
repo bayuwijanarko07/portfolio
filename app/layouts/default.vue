@@ -3,16 +3,17 @@
 
     const { isExpanded } = useSidebar()
 
+
     useHead({
         bodyAttrs: {
             class: 'bg-zinc-100 text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100'
         }
     })
-
 </script>
 
 <template>
     <Sidebar/>
+    <SidebarBackdrop />
         <main class="flex-1 transition-all duration-300 ease-in-out"
         :class="[isExpanded ? 'xl:ml-70' : 'xl:ml-25']"
         >
