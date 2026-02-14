@@ -4,11 +4,7 @@
 <template>
     <UDashboardPanel id="profile">
         <template #header>
-            <UDashboardNavbar title="Profile" :ui="{ right: 'gap-3' }">
-                <template #leading>
-                    <UDashboardSidebarCollapse />
-                </template>
-            </UDashboardNavbar>
+
         </template>
 
         <template #body>

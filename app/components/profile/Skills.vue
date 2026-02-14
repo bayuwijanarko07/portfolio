@@ -30,46 +30,44 @@
 </script>
 
 <template>
-    <UPageGrid class="gap-6 lg:grid-cols-1">
-        <UCard>
+    <UCard>
 
-            <template #header>
-                <div class="flex items-center gap-2 p-0 justify-start">
-                    <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                        <UIcon name="mdi:code" class="text-white"/>
-                    </div>
-                    <span class="font-semibold text-primary-500">
-                        {{ tSkills('title') }}
-                    </span>
+        <template #header>
+            <div class="flex items-center gap-2 p-0 justify-start">
+                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+                    <UIcon name="mdi:code" class="text-white"/>
                 </div>
-            </template>
-
-            <UMarquee :overlay="false" pause-on-hover class="p-2">
-                <div
-                    v-for="(skill) in Skiils"
-                    class="mx-4 flex items-center justify-center"
-                >
-                    <UIcon
-                        :name="skill.icon"
-                        @mouseenter="onEnter($event, skill.title)"
-                        @mousemove="onMove($event)"
-                        @mouseleave="onLeave"
-                        class="text-xl lg:text-2xl transition hover:scale-110 hover:text-primary-500"
-                    />
-                </div>
-            </UMarquee>
-
-            <div
-                v-if="tooltip.show"
-                class="fixed z-50 rounded bg-zinc-800 px-2 py-1 text-xs text-white pointer-events-none"
-                :style="{
-                    left: tooltip.x + 12 + 'px',
-                    top: tooltip.y + 12 + 'px'
-                }"
-                >
-                {{ tooltip.text }}
+                <span class="font-semibold text-primary-500">
+                    {{ tSkills('title') }}
+                </span>
             </div>
+        </template>
 
-        </UCard>
-    </UPageGrid>
+        <UMarquee :overlay="false" pause-on-hover class="p-2">
+            <div
+                v-for="(skill) in Skiils"
+                class="mx-4 flex items-center justify-center"
+            >
+                <UIcon
+                    :name="skill.icon"
+                    @mouseenter="onEnter($event, skill.title)"
+                    @mousemove="onMove($event)"
+                    @mouseleave="onLeave"
+                    class="text-xl lg:text-2xl transition hover:scale-110 hover:text-primary-500"
+                />
+            </div>
+        </UMarquee>
+
+        <div
+            v-if="tooltip.show"
+            class="fixed z-50 rounded bg-zinc-800 px-2 py-1 text-xs text-white pointer-events-none"
+            :style="{
+                left: tooltip.x + 12 + 'px',
+                top: tooltip.y + 12 + 'px'
+            }"
+            >
+            {{ tooltip.text }}
+        </div>
+
+    </UCard>
 </template>

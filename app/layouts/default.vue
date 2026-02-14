@@ -12,11 +12,11 @@
 </script>
 
 <template>
-
     <Sidebar/>
-    <main class="flex-1 transition-all duration-300 ease-in-out"
-        :class="[isExpanded ? 'xl:ml-72.5' : 'xl:ml-22.5']"
+        <main class="flex-1 transition-all duration-300 ease-in-out"
+        :class="[isExpanded ? 'xl:ml-70' : 'xl:ml-25']"
         >
+        <Header />
         <div class="mx-auto max-w-screen-2xl p-4 pb-20 md:p-6 md:pb-6">
             <slot />
         </div>

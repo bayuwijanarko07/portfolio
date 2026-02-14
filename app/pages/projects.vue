@@ -15,11 +15,6 @@
 <template>
     <UDashboardPanel id="project">
         <template #header>
-            <UDashboardNavbar title="Project" :ui="{ right: 'gap-3' }">
-                <template #leading>
-                    <UDashboardSidebarCollapse />
-                </template>
-            </UDashboardNavbar>
         </template>
 
         <template #body>
