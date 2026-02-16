@@ -38,6 +38,7 @@
   },
   "HomePage": {
     "title": "Home",
+    "description": "Home",
     "github": {
       "title": "GitHub Contributions",
       "sub_title": "GitHub activity over the past year.",
