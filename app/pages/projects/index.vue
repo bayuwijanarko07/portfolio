@@ -21,7 +21,7 @@
                     <NuxtLink :to="`/projects/${pro.slug}`" class="group relative block h-full" >
                         <div class="absolute inset-0 z-10 flex items-center justify-center rounded
                                 opacity-0 transition duration-300
-                                group-hover:bg-black/10 group-hover:backdrop group-hover:opacity-100"
+                                group-hover:bg-black/20 group-hover:backdrop group-hover:opacity-100"
                         >
                             <UIcon name="i-mdi:external-link" class="text-white text-4xl scale-75 transition duration-300 group-hover:scale-100"
                             />

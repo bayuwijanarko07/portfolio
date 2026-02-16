@@ -38,8 +38,8 @@
                 ]"
                 >
                 <div class="flex items-center gap-2 2xsm:gap-3">
-                    <!-- <HeaderLocaleSwitcher />
-                    <HeaderModeSwitcher /> -->
+                    <HeaderLocaleSwitcher />
+                    <!-- <HeaderModeSwitcher /> -->
                 </div>
             </div>
         </div>
