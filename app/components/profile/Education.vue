@@ -3,7 +3,7 @@
     import { Educations } from '@/constants/education'
 
     const { t } = useI18n()
-    const tEducation = (key: string) => t(`ProfilPage.education.${key}`)
+    const tEducation = (key: string) => t(`ProfilePage.education.${key}`)
 </script>
 
 <template>

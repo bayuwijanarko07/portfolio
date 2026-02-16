@@ -2,7 +2,7 @@
   import { useI18n } from 'vue-i18n'
 
   const { t } = useI18n()
-  const tAbout = (key: string) => t(`ProfilPage.${key}`)
+  const tAbout = (key: string) => t(`ProfilePage.${key}`)
   const paragrafData = [1, 2, 3]
 </script>
 
@@ -24,7 +24,7 @@
             <span class="text-sm text-muted"
                 v-for="item in paragrafData"
             >
-                {{ t(`ProfilPage.about.paragraf_${item}`) }}
+                {{ t(`ProfilePage.about.paragraf_${item}`) }}
             </span>
         </div>
 

@@ -70,7 +70,7 @@ const handleMobileNavigate = () => {
                         @click="handleMobileNavigate()"
                     >
                         <div :class="getActiveClasses(menu)">
-                            <UIcon :name="menu.icon" :class="isActiveRoute(menu) && 'transition-all duration-300 animate-pulse bg-blue-500'" />
+                            <UIcon :name="menu.icon" :class="['size-5',isActiveRoute(menu) && 'transition-all duration-300 animate-pulse bg-blue-500']" />
 
                             <span v-if="isSidebarOpen" class="menu-item-text grow"  :class="isActiveRoute(menu) && 'text-blue-500'">
                                 {{ tNav(`${menu.label}`) }}

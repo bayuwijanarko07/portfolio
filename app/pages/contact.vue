@@ -1,12 +1,9 @@
 <script lang="ts" setup>
-   
+    useSeoPage('ContactPage')
 </script>
 
 <template>
     <UDashboardPanel id="contact">
-        <template #header>
-        </template>
-
         <template #body>
             <ContactForms />
             <ContactSocmed />

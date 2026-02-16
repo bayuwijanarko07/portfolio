@@ -1,12 +1,9 @@
 <script lang="ts" setup>
+    useSeoPage('ProfilePage')
 </script>
 
 <template>
     <UDashboardPanel id="profile">
-        <template #header>
-
-        </template>
-
         <template #body>
             <ProfileAbout />
             <ProfileSkills />

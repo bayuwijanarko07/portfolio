@@ -22,7 +22,7 @@
     <div
         :class="[
           'py-8 flex',
-          !isExpanded && !isHovered ? 'lg:justify-start' : 'justify-start',
+          !isExpanded && !isHovered ? 'sm:justify-center' : 'justify-center',
         ]"
       >
       <NuxtLink to="/">

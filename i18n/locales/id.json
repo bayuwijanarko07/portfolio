@@ -1,5 +1,5 @@
 {
-  "ProfilPage": {
+  "ProfilePage": {
     "title": "Tentang",
     "description": "Biografi Singkat.",
     "about": {
@@ -36,9 +36,8 @@
     "resume_download_button": "Unduh CV",
     "portfolio_download_button": "Unduh Portofolio"
   },
-  "DashboardPage": {
-    "title": "Dasbor",
-    "description": "Dasbor Proses",
+  "HomePage": {
+    "title": "Beranda",
     "github": {
       "title": "Kontribusi GitHub",
       "sub_title": "Aktivitas GitHub satu tahun terakhir.",

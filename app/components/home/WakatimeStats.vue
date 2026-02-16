@@ -8,7 +8,7 @@
     import type { WakaStatsData, WakaAllTimeData } from '@/types/wakatime'
 
     const { t, locale } = useI18n()
-    const tWaka = (key: string) => t(`DashboardPage.wakatime.${key}`)
+    const tWaka = (key: string) => t(`HomePage.wakatime.${key}`)
 
     const dateFnsLocale = computed(() =>
         locale.value === 'id' ? id : enUS

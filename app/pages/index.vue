@@ -1,12 +1,9 @@
 <script setup lang="ts">
-
+    useSeoPage('HomePage')
 </script>
 
 <template>
     <UDashboardPanel id="home">
-        <template #header>
-        </template>
-
         <template #body>
             <HomeWakatimeStats />
         </template>

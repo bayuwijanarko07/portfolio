@@ -5,7 +5,7 @@
     import { id, enUS } from 'date-fns/locale'
 
     const { t, locale } = useI18n()
-    const tCareers = (key: string) => t(`ProfilPage.careers.${key}`)
+    const tCareers = (key: string) => t(`ProfilePage.careers.${key}`)
 
     const dfLocale = computed(() => (locale.value === 'id' ? id : enUS))
 

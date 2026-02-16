@@ -3,7 +3,7 @@
     import { Skiils } from '@/constants/skills'
 
     const { t } = useI18n()
-    const tSkills = (key: string) => t(`ProfilPage.skills.${key}`)
+    const tSkills = (key: string) => t(`ProfilePage.skills.${key}`)
     
     const tooltip = ref({
         show: false,

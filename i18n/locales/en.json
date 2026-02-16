@@ -1,5 +1,5 @@
 {
-  "ProfilPage": {
+  "ProfilePage": {
     "title": "About",
     "description": "Short Biography.",
     "about": {
@@ -36,9 +36,8 @@
     "resume_download_button": "Download Resume",
     "portfolio_download_button": "Download Portfolio"
   },
-  "DashboardPage": {
-    "title": "Dashboard",
-    "description": "Dashboard Progress",
+  "HomePage": {
+    "title": "Home",
     "github": {
       "title": "GitHub Contributions",
       "sub_title": "GitHub activity over the past year.",

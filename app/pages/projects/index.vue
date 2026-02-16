@@ -1,5 +1,6 @@
 <script lang="ts" setup>
     import { Projects } from '@/constants/projects'
+    useSeoPage('ProjectsPage')
     const { t } = useI18n()
     const tProj = (key: string) => t(`ProjectsPage.${key}`)
     

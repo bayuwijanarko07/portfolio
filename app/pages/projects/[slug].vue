@@ -47,10 +47,10 @@
         <div class="flex-1">
             <div class="aspect-video overflow-hidden rounded-2xl">
                 <img
-                :src="project.image"
-                :alt="project.image"
-                loading="lazy"
-                class="w-full h-full object-cover transition duration-500 hover:scale-[.99]"
+                  :src="project.image"
+                  :alt="project.image"
+                  loading="lazy"
+                  class="w-full h-full object-cover transition duration-500 hover:scale-[.99]"
                 />
             </div>
         </div>
