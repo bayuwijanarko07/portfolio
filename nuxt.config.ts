@@ -55,6 +55,7 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    githubToken: process.env.GITHUB_PERSONAL_TOKEN,
     wakatimeApiKey: process.env.WAKATIME_API_KEY,
   },
 })

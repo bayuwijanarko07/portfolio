@@ -3,9 +3,12 @@
     import { useI18n } from 'vue-i18n'
     import { format, formatDistanceToNowStrict } from 'date-fns'
     import { id, enUS } from 'date-fns/locale'
-
     import { WAKATIME_ACCOUNT } from '@/constants/wakatime'
-    import type { WakaStatsData, WakaAllTimeData } from '@/types/wakatime'
+    import type { WakaHandlerResponse } from '@/types/wakatime'
+
+     const props = defineProps<{
+        wakatime?: WakaHandlerResponse | null
+    }>()
 
     const { t, locale } = useI18n()
     const tWaka = (key: string) => t(`HomePage.wakatime.${key}`)
@@ -16,14 +19,6 @@
 
     const isActive = WAKATIME_ACCOUNT.is_active
 
-    interface WakaResponse {
-        status: number
-        stats: WakaStatsData | null
-        all_time: WakaAllTimeData | null
-    }
-
-    const { data, pending, error } = await useFetch<WakaResponse>('/api/wakatime')
-
     const allowedKeys = [
         'best_day',
         'start',
@@ -32,13 +27,13 @@
         'human_readable_total_including_other_language'
     ]
 
-    const range = computed(() => data.value?.stats?.range ?? '')
+    const range = computed(() => props.wakatime?.stats?.range ?? '')
 
     const wakaCards = computed(() => {
 
-        if (!data.value?.stats) return []
+        if (!props.wakatime?.stats) return []
 
-        const { stats } = data.value
+        const { stats } = props.wakatime
 
         return Object.entries(stats)
             .filter(([key]) => allowedKeys.includes(key))
@@ -68,7 +63,7 @@
 
 
     const lastUpdated = computed(() => {
-    const date = data.value?.stats?.modified_at
+    const date = props.wakatime?.stats?.modified_at
         if (!date) return ''
 
         return formatDistanceToNowStrict(new Date(date), {
@@ -105,13 +100,5 @@
                 </span>
             </div>
         </UPageCard>
-
-        <div v-else-if="pending">
-        Loading...
-        </div>
-
-        <div v-else-if="error">
-        Failed to load Wakatime data
-        </div>
     </UPageGrid>
 </template>

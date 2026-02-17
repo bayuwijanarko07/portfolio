@@ -37,8 +37,8 @@
 <template>
   <UApp :locale="locales[locale]" :color-mode="colorMode.value">
     <NuxtLoadingIndicator color="#3b82f6" :throttle="100"/>
-     <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
   </UApp>
 </template>
