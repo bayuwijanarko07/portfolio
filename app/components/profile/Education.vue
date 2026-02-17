@@ -7,20 +7,16 @@
 </script>
 
 <template>
-    <UCard>
-
-        <template #header>
-            <div class="flex items-center gap-2 p-0">
-                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                    <UIcon name="mdi:education-outline" class="text-white"/>
-                </div>
-                <span class="font-semibold text-primary-500">
-                    {{ tEducation('title') }}
-                </span>
-            </div>
-        </template>
-        
-        <UCard v-for="ed in Educations">
+    <div class="flex items-center gap-2 p-0">
+        <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+            <UIcon name="mdi:education-outline" class="text-white"/>
+        </div>
+        <span class="font-semibold text-primary-500">
+            {{ tEducation('title') }}
+        </span>
+    </div>
+    <UPageCard>
+        <UPageCard v-for="ed in Educations">
             <div class="flex flex-row">
                 <div class="mx-4">
                     <img  
@@ -55,6 +51,6 @@
                     </div>
                 </div>
             </div>
-        </UCard>
-    </UCard>
+        </UPageCard>
+    </UPageCard>
 </template>

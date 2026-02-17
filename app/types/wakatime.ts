@@ -2,6 +2,12 @@ export interface WakaApiResponse<T>{
     data: T
 }
 
+export interface WakaLanguage {
+    name: string
+    total_seconds: number
+    text: string
+}
+
 export interface WakaStatsData {
     start: string
     end: string
@@ -11,6 +17,8 @@ export interface WakaStatsData {
         date: string
         text: string
     }
+
+    languages: WakaLanguage[]
     
     range: string
 

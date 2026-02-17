@@ -41,7 +41,6 @@
     "description": "Home",
     "github": {
       "title": "GitHub Contributions",
-      "sub_title": "GitHub activity over the past year.",
       "title_total_contribution": "Total",
       "title_total_this_week_contribution": "This week",
       "title_best_contribution": "Best",

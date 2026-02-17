@@ -51,17 +51,15 @@
 </script>
 
 <template>
-    <UCard>
-        <template #header class="border-none">
-            <div class="flex items-center gap-2 p-0">
-                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                    <UIcon name="mdi:user" class="text-white"/>
-                </div>
-                <span class="font-semibold text-primary-500">
-                    {{ tCont('title') }}
-                </span>
-            </div>
-        </template>
+     <div class="flex items-center gap-2 p-0">
+        <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+            <UIcon name="mdi:user" class="text-white"/>
+        </div>
+        <span class="font-semibold text-primary-500">
+            {{ tCont('title') }}
+        </span>
+    </div>
+    <UPageCard>
         <form @submit.prevent="handleSubmit">
             <div class="-mx-2.5 flex flex-wrap gap-y-5">
                 <div class="w-full px-2.5 xl:w-1/2">
@@ -115,5 +113,5 @@
                 </div>
             </div>
         </form>
-    </UCard>
+    </UPageCard>
 </template>

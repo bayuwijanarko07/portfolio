@@ -3,7 +3,6 @@
 
     const { isExpanded } = useSidebar()
 
-
     useHead({
         bodyAttrs: {
             class: 'bg-zinc-100 text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100'

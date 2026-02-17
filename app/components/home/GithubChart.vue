@@ -189,13 +189,13 @@
 
 <template>
     <UCard>
-        <div class="text-lg font-semibold text-gray-500 dark:text-zinc-400">Activty Overview</div>
-            <div class="flex flex-col items-center gap-8 xl:flex-row">
-                <div class="lg:py-8 sm:py-2">
-                    <div ref="container" class="relative w-full aspect-square max-w-45 sm:max-w-50 lg:max-w-56 mx-auto">
-                        <svg ref="svg" class="h-full w-full"></svg>
-                    </div>
+        <div class="text-muted dark:text-zinc-400">Activty Overview</div>
+        <div class="flex flex-col items-center gap-8 xl:flex-row">
+            <div class="lg:py-8 sm:py-2">
+                <div ref="container" class="relative w-full aspect-square max-w-45 sm:max-w-50 lg:max-w-56 mx-auto">
+                    <svg ref="svg" class="h-full w-full"></svg>
                 </div>
+            </div>
 
             <div class="flex items-start gap-4 md:flex-row xl:flex-col sm:flex-col">
                 <div

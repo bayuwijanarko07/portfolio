@@ -28,18 +28,15 @@
 </script>
 
 <template>
-    <UCard>
-        <template #header class="border-none">
-            <div class="flex items-center gap-2 p-0">
-                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                    <UIcon name="mdi:user" class="text-white"/>
-                </div>
-                <span class="font-semibold text-primary-500">
-                    {{ tCont('social_media.title') }}
-                </span>
-            </div>
-        </template>
-
+    <div class="flex items-center gap-2 p-0">
+        <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+            <UIcon name="mdi:user" class="text-white"/>
+        </div>
+        <span class="font-semibold text-primary-500">
+            {{ tCont('social_media.title') }}
+        </span>
+    </div>
+    <UPageCard>
         <UMarquee reverse :overlay="false" pause-on-hover>
             <NuxtLink
                 v-for="(sos) in Sosmed"
@@ -66,5 +63,5 @@
             >
             {{ tooltip.text }}
         </div>
-    </UCard>
+    </UPageCard>
 </template>

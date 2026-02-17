@@ -3,19 +3,19 @@
     useSeoPage('ProjectsPage')
     const { t } = useI18n()
     const tProj = (key: string) => t(`ProjectsPage.${key}`)
-    
-    const open = ref(false)
-    const selected = ref<any>(null)
-
-    function show(pro: any) {
-      selected.value = pro
-      open.value = true
-    }
 </script>
 
 <template>
     <UDashboardPanel id="project">
         <template #body>
+            <div class="flex items-center gap-2 p-0">
+                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+                    <UIcon name="mdi:user" class="text-white"/>
+                </div>
+                <span class="font-semibold text-primary-500">
+                    {{ tProj('title') }}
+                </span>
+            </div>
             <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 py-2">
                 <div v-for="pro in Projects" :key="pro.slug">
                     <NuxtLink :to="`/projects/${pro.slug}`" class="group relative block h-full" >

@@ -48,21 +48,17 @@
 </script>
 
 <template>
-    <UCard>
-
-        <template #header>
-            <div class="flex items-center gap-2 p-0">
-                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                    <UIcon name="mdi:briefcase-variant" class="text-white"/>
-                </div>
-                <span class="font-semibold text-primary-500">
-                    {{ tCareers('title') }}
-                </span>
-            </div>
-        </template>
-
+    <div class="flex items-center gap-2 p-0">
+        <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+            <UIcon name="mdi:briefcase-variant" class="text-white"/>
+        </div>
+        <span class="font-semibold text-primary-500">
+            {{ tCareers('title') }}
+        </span>
+    </div>
+    <UPageCard>
         <div class="grid grid-cols-1 gap-4">
-            <UCard v-for="(c,index) in careers">
+            <UPageCard v-for="(c,index) in careers">
                 <div class="flex flex-row">
                     <div class="mx-4">
                         <img  
@@ -131,8 +127,8 @@
                         </li>
                     </ul>
                 </div>
-            </UCard>
+            </UPageCard>
         </div>
 
-    </UCard>
+    </UPageCard>
 </template>

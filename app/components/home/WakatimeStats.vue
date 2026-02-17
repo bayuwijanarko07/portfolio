@@ -6,64 +6,73 @@
     import { WAKATIME_ACCOUNT } from '@/constants/wakatime'
     import type { WakaHandlerResponse } from '@/types/wakatime'
 
-     const props = defineProps<{
+    const props = defineProps<{
         wakatime?: WakaHandlerResponse | null
     }>()
 
     const { t, locale } = useI18n()
     const tWaka = (key: string) => t(`HomePage.wakatime.${key}`)
 
-    const dateFnsLocale = computed(() =>
-        locale.value === 'id' ? id : enUS
-    )
+    const dateFnsLocale = computed(() => (locale.value === 'id' ? id : enUS))
 
     const isActive = WAKATIME_ACCOUNT.is_active
 
-    const allowedKeys = [
-        'best_day',
-        'start',
-        'end',
-        'human_readable_daily_average_including_other_language',
-        'human_readable_total_including_other_language'
-    ]
+    const formatDate = (date?: string) => {
+        if (!date) return ''
+        return format(new Date(date), 'dd MMM yyyy', {
+            locale: dateFnsLocale.value
+        })
+    }
 
     const range = computed(() => props.wakatime?.stats?.range ?? '')
 
+    const allTimeSinceJoined = computed(
+        () => props.wakatime?.all_time?.text ?? ''
+    )
+
     const wakaCards = computed(() => {
+        const stats = props.wakatime?.stats
+        if (!stats) return []
 
-        if (!props.wakatime?.stats) return []
+    const cards = [
+        {
+            key: 'all_time_since_joined',
+            value: allTimeSinceJoined.value
+        },
+        {
+            key: 'best_day',
+            value: stats.best_day
+                ? `${formatDate(stats.best_day.date)} • ${stats.best_day.text}`
+                : ''
+        },
+        {
+            key: 'start',
+            value: formatDate(stats.start as string)
+        },
+        {
+            key: 'end',
+            value: formatDate(stats.end as string)
+        },
+        {
+            key: 'human_readable_daily_average_including_other_language',
+            value: stats.human_readable_daily_average_including_other_language as string
+        },
+        {
+            key: 'human_readable_total_including_other_language',
+            value: stats.human_readable_total_including_other_language as string
+        }
+    ]
 
-        const { stats } = props.wakatime
-
-        return Object.entries(stats)
-            .filter(([key]) => allowedKeys.includes(key))
-            .map(([key, value]) => {
-            let displayValue = ''
-
-            if (key === 'start' || key === 'end') {
-                displayValue = format(new Date(value as string), 'dd MMM yyyy', {
-                    locale: dateFnsLocale.value
-                })
-            } else if (key === 'best_day' && value) {
-                const date = format(new Date(value.date), 'dd MMM yyyy', {
-                    locale: dateFnsLocale.value
-                })
-
-                displayValue = `${date} • ${value.text}`
-            } else {
-                displayValue = value as string
-            }
-
-                return {
-                    label: tWaka(key),
-                    value: displayValue
-                }
-            })
-        })
-
+    return cards
+        .filter(item => item.value)
+        .map(item => ({
+            label: tWaka(item.key),
+            value: item.value
+        }))
+    })
 
     const lastUpdated = computed(() => {
-    const date = props.wakatime?.stats?.modified_at
+        const date = props.wakatime?.stats?.modified_at
         if (!date) return ''
 
         return formatDistanceToNowStrict(new Date(date), {
@@ -80,14 +89,10 @@
         <div class="text-sm text-muted"> {{ tWaka('last_update') }} : {{ lastUpdated }}</div>
     </div>
     <UPageGrid class="lg:grid-cols-3 gap-2 sm:gap-3">
-        <UPageCard 
+        <UCard 
             v-if="isActive && wakaCards.length"
             v-for="(item, index) in wakaCards"
             :key="index"
-            :ui="{
-                container: 'gap-y-1.5',
-                wrapper: 'items-start',
-            }"
             class="hover:shadow"
         >
             <div class="flex flex-col gap-2">
@@ -99,6 +104,6 @@
                     {{ item.value }}
                 </span>
             </div>
-        </UPageCard>
+        </UCard>
     </UPageGrid>
 </template>

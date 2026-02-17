@@ -67,7 +67,7 @@
             </div>
 
             <div class="flex items-end justify-between mt-5">
-                <h3 class="mt-2 text-lg text-zinc-500 font-semibold dark:text-zinc-400">
+                <h3 class="mt-2 text-muted dark:text-zinc-400">
                     {{ stat.label }}
                 </h3>
 
