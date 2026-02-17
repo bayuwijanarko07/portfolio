@@ -52,6 +52,6 @@
       </NuxtLink>
     </div>
     <SidebarMenu :list="menus" />
-    <SidebarFooter />
+    <SidebarFooter v-if="isExpanded || isMobileOpen" />
   </aside>
 </template>
