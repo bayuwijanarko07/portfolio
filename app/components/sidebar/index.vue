@@ -52,5 +52,6 @@
       </NuxtLink>
     </div>
     <SidebarMenu :list="menus" />
+    <SidebarFooter />
   </aside>
 </template>

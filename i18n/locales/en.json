@@ -1,41 +1,4 @@
 {
-  "ProfilePage": {
-    "title": "About",
-    "description": "Short Biography.",
-    "about": {
-      "paragraf_1": "Hola! I am Bayu Wijanarko a Frontend Web Developer who focuses on building modern interfaces that are scalable, maintainable, and product-oriented. Experienced in using Nuxt.js, Astro.js, and the Vue ecosystem, I am used to designing frontend architecture that is neat, data-driven, and comfortable for users to use.",
-
-      "paragraf_2": "Experienced in dealing with real system requirements and business contexts, I enjoy the role of a problem solver bridging product, design and technical solution needs. In the future, I am ready to grow into a Senior Frontend Engineer.",
-
-      "paragraf_3": "Best regards,"
-    },
-    "careers": {
-      "title": "Careers",
-      "sub_title": "Professional Experience.",
-      "show_detail": "Show details",
-      "hide_detail": "Hide details",
-      "sections": {
-        "responsibilities": "Responsibilities"
-      }
-    },
-    "skills": {
-      "title": "Skills",
-      "sub_title" : "Professional Skills."
-    },
-    "duration": {
-      "year": "Year",
-      "years": "Years",
-      "month": "Month",
-      "months": "Months",
-      "present": "Present"
-    },
-    "education": {
-      "title": "Education",
-      "sub_title": "Last Education."
-    },
-    "resume_download_button": "Download Resume",
-    "portfolio_download_button": "Download Portfolio"
-  },
   "HomePage": {
     "title": "Home",
     "description": "Home",
@@ -61,18 +24,46 @@
       "last_7_days": "Last 7 Days"
     }
   },
+  "ProfilePage": {
+    "title": "About",
+    "about": {
+      "paragraf_1": "Hola! I am Bayu Wijanarko a Frontend Web Developer who focuses on building modern interfaces that are scalable, maintainable, and product-oriented. Experienced in using Nuxt.js, Astro.js, and the Vue ecosystem, I am used to designing frontend architecture that is neat, data-driven, and comfortable for users to use.",
+
+      "paragraf_2": "Experienced in dealing with real system requirements and business contexts, I enjoy the role of a problem solver bridging product, design and technical solution needs. In the future, I am ready to grow into a Senior Frontend Engineer.",
+
+      "paragraf_3": "Best regards,"
+    },
+    "careers": {
+      "title": "Careers",
+      "show_detail": "Show details",
+      "hide_detail": "Hide details",
+      "sections": {
+        "responsibilities": "Responsibilities"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "sub_title" : "Professional Skills."
+    },
+    "duration": {
+      "year": "Year",
+      "years": "Years",
+      "month": "Month",
+      "months": "Months",
+      "present": "Present"
+    },
+    "education": {
+      "title": "Education"
+    }
+  },
   "ProjectsPage": {
     "title": "Projects",
-    "description": "Projects Showcase.",
-    "detail_project": "Detail Project",
-    "tech_stack": "Teknologi yang Digunakan",
-    "back": "Back",
-    "source_code": "Kode Sumber",
-    "live_preview": "Live Preview"
+    "description": "Description",
+    "live_preview": "Live Preview",
+    "back": "Back"
   },
   "ContactPage": {
     "title": "Contact",
-    "description": "Let`s get in touch.",
     "social_media": {
       "title": "Social Media",
       "description": "Find me on social media."
@@ -98,8 +89,7 @@
   },
   "LocaleSwitcher": {
     "en": "EN",
-    "id": "ID",
-    "label": "Language"
+    "id": "ID"
   },
   "Navigation": {
     "Home": "Home",
@@ -109,6 +99,7 @@
   },
   "NotFoundPage": {
     "title": "Page not found",
-    "button": "Take me home"
+    "button": "Take me home",
+    "error": "There is an error"
   }
 }

@@ -1,41 +1,4 @@
 {
-  "ProfilePage": {
-    "title": "Tentang",
-    "description": "Biografi Singkat.",
-    "about": {
-      "paragraf_1": "Hola! Saya Bayu Wijanarko adalah Frontend Web Developer yang berfokus pada pembangunan antarmuka modern yang scalable, maintainable, dan berorientasi produk. Berpengalaman menggunakan Nuxt.js, Astro.js, dan ekosistem Vue, saya terbiasa merancang arsitektur frontend yang rapi, data-driven, serta nyaman digunakan oleh pengguna.",
-
-      "paragraf_2": "Berpengalaman menangani kebutuhan sistem nyata dan konteks bisnis, saya menikmati peran sebagai problem solver yang menjembatani kebutuhan produk, desain, dan solusi teknis. Ke depan, saya siap berkembang ke peran Senior Frontend Engineer.",
-
-      "paragraf_3": "Salam hangat,"
-    },
-    "skills": {
-      "title": "Keahlian",
-      "sub_title": "Keahlian Profesional."
-    },
-    "careers": {
-      "title": "Karier",
-      "sub_title": "Pengalaman Profesional saya.",
-      "show_detail": "Lihat detail",
-      "hide_detail": "Sembunyikan",
-      "sections": {
-        "responsibilities": "Tanggung Jawab"
-      }
-    },
-    "duration": {
-      "year": "Tahun",
-      "years": "Tahun",
-      "month": "Bulan",
-      "months": "Bulan",
-      "present": "Sekarang"
-    },
-    "education": {
-      "title": "Pendidikan",
-      "sub_title": "Pendidikan Terakhir."
-    },
-    "resume_download_button": "Unduh CV",
-    "portfolio_download_button": "Unduh Portofolio"
-  },
   "HomePage": {
     "title": "Beranda",
     "description": "Beranda",
@@ -62,18 +25,46 @@
       "last_7_days": "7 Hari Terakhir"
     }
   },
+  "ProfilePage": {
+    "title": "Tentang",
+    "about": {
+      "paragraf_1": "Hola! Saya Bayu Wijanarko adalah Frontend Web Developer yang berfokus pada pembangunan antarmuka modern yang scalable, maintainable, dan berorientasi produk. Berpengalaman menggunakan Nuxt.js, Astro.js, dan ekosistem Vue, saya terbiasa merancang arsitektur frontend yang rapi, data-driven, serta nyaman digunakan oleh pengguna.",
+
+      "paragraf_2": "Berpengalaman menangani kebutuhan sistem nyata dan konteks bisnis, saya menikmati peran sebagai problem solver yang menjembatani kebutuhan produk, desain, dan solusi teknis. Ke depan, saya siap berkembang ke peran Senior Frontend Engineer.",
+
+      "paragraf_3": "Salam hangat,"
+    },
+    "skills": {
+      "title": "Keahlian",
+      "sub_title": "Keahlian Profesional."
+    },
+    "careers": {
+      "title": "Karier",
+      "show_detail": "Lihat detail",
+      "hide_detail": "Sembunyikan",
+      "sections": {
+        "responsibilities": "Tanggung Jawab"
+      }
+    },
+    "duration": {
+      "year": "Tahun",
+      "years": "Tahun",
+      "month": "Bulan",
+      "months": "Bulan",
+      "present": "Sekarang"
+    },
+    "education": {
+      "title": "Pendidikan"
+    }
+  },
   "ProjectsPage": {
     "title": "Proyek",
-    "description": "Pameran proyek-proyek",
-    "detail_project": "Detil Proyek",
-    "tech_stack": "Teknologi yang Digunakan",
-    "back": "Kembali",
-    "source_code": "Kode Sumber",
-    "live_preview": "Preview Langsung"
+    "description": "Deskripsi",
+    "live_preview": "Preview Langsung",
+    "back": "Kembali"
   },
   "ContactPage": {
     "title": "Kontak",
-    "description": "Mari kita terhubung.",
     "social_media": {
       "title": "Sosial Media",
       "description": "Temukan saya di sosial media."
@@ -99,8 +90,7 @@
   },
   "LocaleSwitcher": {
     "en": "🇺🇸",
-    "id": "🇮🇩",
-    "label": "Bahasa"
+    "id": "🇮🇩"
   },
   "Navigation": {
     "Home": "Beranda",
@@ -110,6 +100,7 @@
   },
   "NotFoundPage": {
     "title": "Halaman tidak ditemukan",
-    "button": "Bawa saya ke beranda"
+    "button": "Bawa saya ke beranda",
+    "error": "Terjadi Kesalahan"
   }
 }
