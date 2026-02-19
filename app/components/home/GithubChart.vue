@@ -201,7 +201,7 @@
                 <div
                     v-for="item in items"
                     :key="item.key"
-                    class="flex items-start gap-2.5"
+                    class="flex items-start gap-2"
                 >
                     <span
                         class="mt-1.5 h-2 w-2 rounded-full"
