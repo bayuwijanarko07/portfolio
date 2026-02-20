@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { ssr: true }
   },
 
   compatibilityDate: '2025-01-15',
