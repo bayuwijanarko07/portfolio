@@ -8,6 +8,4 @@ export default defineCachedEventHandler(async () => {
     github,
     wakatime
   }
-}, {
-  maxAge: 60 * 10,
 })
