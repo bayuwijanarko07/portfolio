@@ -19,7 +19,7 @@
 
 <template>
   <UCard>
-    <div class="lg:p-6 bg-white dark:bg-gray-900">
+    <div class="lg:p-6 bg-white dark:bg-zinc-900">
       
       <div class="flex justify-between mb-5">
         <NuxtLink
