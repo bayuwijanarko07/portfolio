@@ -36,7 +36,7 @@
             {{ tCont('social_media.title') }}
         </span>
     </div>
-    <UPageCard>
+    <UCard>
         <UMarquee reverse :overlay="false" pause-on-hover>
             <NuxtLink
                 v-for="(sos) in Sosmed"
@@ -63,5 +63,5 @@
             >
             {{ tooltip.text }}
         </div>
-    </UPageCard>
+    </UCard>
 </template>

@@ -23,7 +23,6 @@
     },
   })
 
-
   useSeoMeta({
       title: 'Bayu Wijanarko',
       description: 'Personal website dan portfolio Bayu Wijanarko',
