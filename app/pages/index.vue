@@ -13,12 +13,12 @@
     <UDashboardPanel id="home">
         <template #body>
             <div class="flex items-center gap-2 p-0">
-                <div class="p-0.5 rounded bg-primary flex items-center justify-center">
+                <div class="p-0.5 rounded bg-primary flex items-center">
                     <UIcon name="mdi:github" class="text-white"/>
                 </div>
-                <span class="font-semibold text-primary-500">
+                <a href="https://github.com/bayuwijanarko07" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-500">
                     {{ tGit('title') }}
-                </span>
+                </a>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 items-start">
                 <div class="lg:col-span-2 space-y-3">
@@ -33,11 +33,11 @@
             
             <div class="flex items-center gap-2 p-0">
                 <div class="p-0.5 rounded bg-primary flex items-center justify-center">
-                    <UIcon name="mdi:github" class="text-white"/>
+                    <UIcon name="mdi:code" class="text-white"/>
                 </div>
-                <span class="font-semibold text-primary-500">
+                <a href="https://wakatime.com/@bayuwijanarko07" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-500">
                     {{ tWak('title') }}
-                </span>
+                </a>
             </div>
             <HomeWakatimeStats v-if="!pending && data" :wakatime="data?.wakatime" />
             <HomeWakatimeChart v-if="!pending && data" :wakatime="data?.wakatime" />
