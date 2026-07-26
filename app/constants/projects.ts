@@ -52,6 +52,7 @@ export const Projects = [
         ],
         description: "A Learning Management System (LMS) tryout platform developed for Tantuhub (2022–2024). The platform enables users to access online tryout exams, manage learning content, and complete transactions through an integrated payment gateway. Built using AstroJS for performance optimization, Bootstrap and CSS for responsive UI, JavaScript for interactivity, and Directus as a headless CMS for content and data management. The project focuses on scalability, performance, and a seamless user experience.",
         image: "/images/projects/tantu.webp",
+        href: "https://tantuhub.com",
         isShow: true,
     },
     {
